@@ -1,0 +1,532 @@
+body{
+    background-color: rgb(61, 61, 61);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+    .buscador, .adopta, .imagenes, .preguntas, .pie-pag{
+        padding: 1em, 2em;
+        
+    }
+
+    .adopta, .imagenes, .preguntas, .pie-pag{
+        float: left;
+        box-sizing: box;
+    }
+
+
+    /*  BUSCADOR Y BARRA VERDE DE ARRIBA////////////////////////////////////////////////////////////////////////*/
+    .buscador {
+        /*overflow: hidden;*/
+        background-color: rgb(222, 253, 226);
+        width: 100%;
+        min-width: 320px;
+        margin: 0;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    /* Style los links dentro de la barra de navegación */
+
+        .buscador a {            
+            padding: 10px 5px;
+            width: 10%;
+            font-size: 20px;
+            min-width: 102px;           
+        }
+
+        /* Cambiar el color de los links */
+
+        .buscador a:hover {
+            background-color: rgb(72, 199, 89);
+            color: rgb(255, 255, 255);
+        }
+
+        /* Cambias color del home para distinguirlo del resto*/
+
+        .buscador a.active {            
+            background-color: rgba(62, 133, 62, 0.993);
+            color: rgb(255, 255, 255);
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        /* Style la barra de búsqueda dentro de la barra de navegación */
+
+        .buscador input[type=text] {
+            padding: 6px;
+            width: 30%;
+            min-width: 100px;
+            border: none;
+            margin-left: 10%;
+            font-size: 17px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+    /* CABECERA- HEADER ///////////////////////////////////////////////////////////////////////////////////////////////*/            
+    .cabecera{
+        /*background-color: rgb(90, 90, 90);*/
+        width: 100%;
+        height: 820%;
+        
+    }
+        .cabecera img{
+            opacity: 0.5;
+            border:none;
+            position: absolute;
+            right:0px;
+            width: 100%;
+        }
+
+        .cabecera header{
+            font-size: 102px;
+            margin-top:10%;
+            position: absolute;
+            top: 10%;
+            text-align: center;
+            width: 50%;
+            color: rgb(255, 255, 255);
+
+        }
+
+
+    /* FLEX BOX DE 3 BLOQUES, LOS DEL MEDIO /////////////////////////////////////////////////////////////*/
+    #main{
+        width: 100%;
+        height: 300%;
+        display: flex;
+        border: 2 px solid rgb(255, 255, 255);
+        margin-top: 55%;
+        margin-bottom: 10%;
+    }
+        #main div {
+            justify-content: space-between;
+            margin: 5%;                  /*Espacio entre los 3 bloques/contenedores*/
+        }
+
+            /* ADOPTA BLOQUE 3 IZQUIERDA //////////////////////////////////////////////////////////////////////*/
+        .adopta{
+            width: 20%;
+        }
+
+            .adopta h1{
+                font-size: 30px;
+                color: rgb(49, 49, 49);
+                background: linear-gradient(to top, rgba(255,255,255,0), rgb(222, 253, 226));
+                height: 4%;      /*Heigh del cuadrado verde*/
+                width: 100%;        /*width del cuadrado verde*/
+                justify-content: center;
+                padding: 30px;
+                
+            }
+    
+            .adopta p{
+                color: rgb(188, 252, 207);
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                padding: 4%;
+                margin:10%;     /*margen de las letras*/
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            /* IMAGENES DE PERROS //////////////////////////////////////////////////////////////////////*/
+        .lista-imagenes{
+            width: 52%;
+            display: flex;            
+            flex-direction: row; /*Sirve para indicar la disposición de los elementos de la flex */
+            flex-wrap: wrap; /*Sirve para controlar si la flexbox es multilinea o unilinea*/            
+            
+        }
+            .lista-imagenes img{
+                border-radius: 100px;
+                width: 200px; 
+            }
+
+                .lista-imagenes img:hover{                   
+                    opacity: 0.5;
+                    filter: alpha(opacity=50);
+                }
+
+                .imagen{
+                    width: 200px;
+                    height: 149px;
+                }
+
+                .letras-fotos a{                    
+                    color: rgb(254, 255, 254);
+                }
+
+                div.descripcion{
+                    width: 200px;
+                    height: 60px;
+                    opacity: 0.5;
+                    background-color: rgb(206, 255, 202);
+                    overflow: auto;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+
+                .letras-fotos a:hover{
+                    color: rgb(255, 255, 255);
+                }
+
+                .letras-fotos a:link{
+                    color:rgb(255, 89, 89);
+                }
+                              
+
+            /* BLOQUE VERDE IZQUIERDA DE POR QUÉ ADOPTAR ////////////////////////////////////////////////*/
+        .preguntas{
+            width: 28%;    
+            height: 80%;     
+            background-color: rgb(222, 253, 226);
+            padding: 5%;        /*grosos y tamaño del recuadro verde*/
+            color: rgb(49, 49, 49);
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgb(255, 255, 255);
+            
+        }
+
+            .preguntas p{
+                font-size: 20px;
+            }
+
+    /* PIE DE PAGINA/FOOTER //////////////////////////////////////////////////////////////////////////////*/    
+    #pie-pagina{
+        display: flex;
+        width: 100.6%;
+        height: 25%;
+        color: rgba(62, 133, 62, 0.993);
+        font-size: 16px;
+        justify-content: flex-end;
+        opacity: 0.5;
+
+    }
+
+        .pie-pag{
+            background-color: rgb(222, 253, 226);
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0px;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+            .pie-pag p{
+                opacity: 1;
+            }
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/            
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* SEGUNDA PAGINA /////////////////////////////////////////////////////////////////////////////////////////////*/
+
+    .foto-container{
+        border-radius: 40px;
+        display: flex;
+        width: 80%;
+        height: 800px;
+        margin-left: 10%;
+        margin-top: 2%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+        .foto-container img{
+            opacity: 0.5;
+            width: 900px;
+            filter: alpha(opacity=50);
+            border-radius: 30px;
+            border: 10px solid rgba(62, 133, 62, 0.993);
+        }
+
+            .foto-container img:hover{
+                opacity: 1.0;
+                filter: alpha(opacity=100);
+            }
+
+            .foto-container p{
+                justify-content: left;
+                margin-left: 10%;
+                transition: height 10s;
+                font-size: 50px;
+            }
+
+    .description{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .info{
+        width: 201px;
+        background-color: rgba(91, 124, 91, 0.993); 
+
+    }
+
+    .info2{
+        width: 201px;
+        background-color: rgba(127, 209, 127, 0.993); 
+
+    }
+
+    .info3{
+        width: 201px;
+        background-color: rgba(177, 247, 177, 0.993); 
+
+    }
+
+    .description a{
+        color: rgb(235, 155, 64);
+    }
+    
+
+
+    #contactar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 350px;
+        justify-content: space-around;
+    }
+
+        .datos-contacto{
+            width: 30%;
+            background-color: rgb(221, 248, 218);
+            height: 150px;
+            border-radius: 30px;
+            font-size: 20px;    
+            margin-top: 15px;       
+        }
+
+        .comentario{
+            width: 30%;
+            font-size: 20px;
+            color: rgb(197, 255, 195);
+        }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* PAGINA REGISTRO SIN MEDIA QUERIS PORQUE ME PARECIÓ SUFICIENTE CON HACER LA PAGINA*/
+
+
+#nombres {
+    margin-left: 120px;
+}
+
+
+#contacto{
+    font-size: 15px;
+    width: 100%;
+    height: 1000px;
+    flex-direction: row;
+    display: flex;                     
+    justify-content: space-around;  
+                               
+}
+
+    .datos{
+        /*border: 1px solid #ffffff;*/
+        border-radius: 30px;
+        background-color: rgb(192, 255, 180);
+        width:40%;
+        margin-top:55%;
+        height: 400px;
+        text-align: center;
+        
+    }
+
+    .error-datos{
+        /*border: 1px solid rgb(255, 255, 255);*/
+        border-radius: 30px;
+        background-color: rgb(64, 133, 58);
+        width: 50%;
+        height: 400px;
+        margin-top:55%;
+        text-align: center;
+    }
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/ 
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/    
+/* HACIENDOLO RESPONSIVE //////////////////////////////////////////////////////////////////////////////*/
+          
+@media screen and (max-width: 1190px) {
+    
+    .foto-container{
+        height: 700px;
+    }
+
+    .foto-container img{
+        width: 675px;
+        height: 466px;        
+    }
+
+    .datos-contacto{
+        height: 200px;
+    }
+
+    #pie-pag{
+        height: 20%;
+    }
+    #contactar{
+        margin-bottom: 10%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .buscador input[type=text] {
+        width: 40%;
+        margin-left: 0%;
+    }
+    .cabecera header {
+        font-size: 80px;
+    }
+    #main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .adopta {
+        order: 1;
+        width: 35%;
+    }
+    .preguntas {
+        order: 2;
+        width: 35%;
+    }
+    .lista-imagenes {
+        order: 3;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .buscador {
+        flex-wrap: wrap;
+    }
+    .cabecera header {
+        font-size: 50px;
+    }
+
+    #main{
+        margin-bottom: 15%;
+    }
+
+    .adopta {
+        width: 100%;
+    }
+    .adopta h1{
+        width: 85%;
+    }
+    .adopta p {
+        margin: 0%;        
+    }
+    .preguntas {
+        width: 100%;
+    }
+    #contactar{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 65%;
+        height: 25%;
+        margin-bottom: 25%;
+        justify-content: center;
+        margin-left: 35%;
+    }
+    .datos-contacto{
+        width: 50%;
+        height: 250px;
+    }
+    .foto-container{
+        height: 500px;
+    }
+        .foto-container img{
+            width: 450px;
+            height: 311px;        
+        }
+}
+
+@media screen and (max-width: 620px){
+    .foto-container{
+        height: 300px;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    
+    .foto-container img{       
+        width: 225px;
+        height: 155px;        
+    }
+
+    #main{
+        margin-bottom: 20%;
+    }
+
+    .datos-contacto{
+        width: 75%;        
+    }
+    #contactar{
+        margin-left: 25%;
+        margin-bottom: 35%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .cabecera header {
+        font-size: 32px;
+    }
+    .adopta h1{
+        font-size: 25px;
+    }
+
+    #main{
+        margin-bottom: 45%;
+    }
+
+}
+
+@media screen and (max-width: 352px) {
+    .cabecera{
+        margin-top: 20%;
+    }
+    .cabecera header{
+        margin-top: 30%;
+    }
+}
+
+
+    /* HERRAMIENTAS COMUNES /////////////////////////////////////////*/
+
+    a:focus{                     /*Para cuando arrastras o tabulas cambia el color*/
+        color: rgb(55, 165, 51);
+        text-decoration: none;
+    }
+    
+    a:link{                     /*Para que no aparezca el link subrayado*/
+        color: rgb(36, 36, 36);
+        text-decoration: none;
+    }
+    
+    a:visited{                   /*Cuando ya has visitado la página*/
+        background-color: rgb(21, 255, 0);
+        text-decoration: none;
+    }

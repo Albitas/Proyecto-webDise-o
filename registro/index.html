@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang= "en-esp">
+
+    <head>
+        <title> PRACTICA DISEÑO ALBA PERIS FERNÁNDEZ</title>
+            <!--Ruta de acceso.Tipo.Relacion con html es una hoja de estilos-->
+        <link href="../css/styles.css" type="text/css" rel="stylesheet"/> 
+            <!--Para que funcionen las ñ y los acentos sin problemas -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <!-- Para que funcione el responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <!--Pongo fuentes asi porque me es más facil-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">        
+    </head>
+
+    <body>
+
+                <!--BUSCADOR-->
+                <div class="buscador">
+                    <a class="active" href="../index.html">Home</a>
+                    <a href="#about">Conocenos</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="#voluntario">Voluntariado</a>
+                    <a href="#socio">Registrate</a>
+                    <a href="#apadrina">Apadrina</a>
+                    <input type="text" placeholder="Search...">
+                </div>
+        
+                <!--Esto seria la CABCERA O HEADER-->
+                <div class="cabecera">
+                    <header>    NO SOY<br>SIN TI </header>
+                    <img src="images/portada.jpg"tittle="portada">
+                </div>
+
+            <div id="contacto">
+                <div class="datos">
+                    <h2>Alba Peris Fernández</h2>
+        
+                    <ul>
+                        <p>
+                            Nombre: Alba Peris Fernández
+                        </p>
+                        <p>
+                             DNI: 44920363-A 
+                        </p>
+                        <p>
+                            Número de contacto: 660066524 
+                        </p>
+                            <p id="email">E-mail:<b> <id="E-mail">
+                                <a href="mailto:albitaperis9@gmail.com">Email Alba</a></id></b></p>
+                    </ul>
+            
+                    <h2>Contacto del centro:</h2>
+                        <b><a href="mailto:upvresolvemosproblemas@gmail.com">Email UPV</b></a>
+                </div>
+            
+        
+                <div class="error-datos">
+                    <p>
+                        ¿No es tu cuenta?:
+                    </p>
+                        <form action="ejemplo.php" method="get">
+                            <p>
+                                Introduzca su nombre:
+                            </p>
+                        <input type="text" name="username" size="15" maxlengt="10" />  
+                            <p>
+                                Introduzca su clave: 
+                            </p>
+                        <input type="password" name="userpass" size="15" maxlengt="10" />
+        
+                    <p> 	
+                        Por favor, contestenos a esta pregunta:
+                    </p>
+                
+                    <p>¿Vas a adoptar uno de nuestros esplendidos peludos?
+        
+                                <br>
+                                <input type="radio" name="solution" value="si"checked="checked" /> Sí 	<br />
+                                <input type="radio" name="solution" value="no" />					No	<br />
+                     </p>	
+                
+                    <p>
+                         Si es así expliquenos cómo en este comenatio de aqui abajo, gracias: 
+                    </p>
+                        <textarea name="comments" cols="28" rows="4">Enter your comments... </textarea>
+                </div>
+            </div>
+
+    </body>
+
+</html>
